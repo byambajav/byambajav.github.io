@@ -1,13 +1,14 @@
 (function() {
     $(function() {
         var a = $(document.body);
-        return ["github", "linkedin", "twitter", "facebook", "email"].forEach(function(b) {
+        return ['github', 'linkedin', 'twitter', 'facebook', 'email'].forEach(function(b) {
             var c, d;
-            return d = "#" + b, c = "color " + b, a.on("mouseenter", d, function() {
-                return a.addClass(c)
-            }).on("mouseleave", d, function() {
-                return a.removeClass(c)
+            var logo = $('#logo');
+            return d = '#' + b, c = 'color ' + b, a.on('mouseenter', d, function() {
+                return a.addClass(c) && logo.attr('src', '/img/initials_white.png');
+            }).on('mouseleave', d, function() {
+                return a.removeClass(c) && logo.attr('src', '/img/initials_green.png');
             })
-        })
-    })
+        });
+    });
 }).call(this);
