@@ -1,0 +1,171 @@
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+::selection {
+    background: #000;
+    color: #fff;
+    text-shadow: none;
+}
+
+::-moz-selection {
+    background: #000;
+    color: #fff;
+    text-shadow: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+html,body {
+    height: 100%;
+}
+
+body {
+    min-height: 400px;
+    min-width: 320px;
+    position: relative;
+    font-family: Ratio,sans-serif;
+    color: #000;
+    -webkit-transition: color 0.25s, background 0.25s;
+    -moz-transition: color 0.25s, background 0.25s;
+    -o-transition: color 0.25s, background 0.25s;
+    -ms-transition: color 0.25s, background 0.25s;
+    transition: color 0.25s, background 0.25s;
+}
+
+body.color {
+    color: #fff;
+}
+
+body.github {
+    background: #333;
+}
+
+body.linkedin {
+    background: #0976b4;
+}
+
+body.twitter {
+    background: #55acee;
+}
+
+body.facebook {
+    background: #3b5998;
+}
+
+body.email {
+    background: #db4437;
+}
+
+#logo {
+    width: 130px;
+    height: 130px;
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    top: 45%;
+    left: 0;
+    right: 0;
+}
+
+#name {
+    font-family: 'Josefin Slab', serif;
+    position: absolute;
+    top: 10%;
+    width: 100%;
+    text-align: center;
+    font-size: 15px;
+    line-height: 1;
+
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+#links .fa {
+    display: inline-block;
+}
+
+#links .fa.fa-send {
+    -webkit-transform: scale(.85);
+    -moz-transform: scale(.85);
+    -o-transform: scale(.85);
+    -ms-transform: scale(.85);
+    transform: scale(.85);
+}
+
+.container {
+    width: 100%;
+    text-align: center;
+}
+
+#links {
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    bottom: 10%;
+    width: 90%;
+    font-size: 30px;
+}
+
+#links .fa {
+    width: 16%;
+}
+
+@media screen and (min-width:400px) {
+    #name {
+        font-size: 16px;
+    }
+
+    #links {
+        font-size: 40px;
+    };
+}
+
+@media screen and (min-width:721px) {
+    .container {
+        min-height: 600px;
+        position: relative;
+        height: 100%;
+        width: 60%;
+        margin: 0 auto;
+    }
+
+    #logo {
+        width: 160px;
+        height: 160px;
+    }
+
+    #name {
+        width: auto;
+        text-align: left;
+        font-size: 18px;
+    }
+
+    #links {
+        width: auto;
+    }
+
+    #links .fa {
+        width: 60px;
+    };
+}
+
+@media screen and (min-width:1000px) {
+    #name {
+        font-size: 24px;
+    }
+
+    #links .fa {
+        width: 80px;
+    };
+}
